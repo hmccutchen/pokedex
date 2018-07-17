@@ -1,0 +1,65 @@
+
+
+/*.squirtle img{
+width: 118%;
+
+}*/
+
+
+.banner{
+  height: 500px;
+}
+
+
+.bulba img{
+  margin-top: 28px;
+
+}
+
+.bulba img:hover{
+  background-color: #d1cdc6;
+  opacity: 1;
+}
+
+.squirtle img:hover{
+   background-color: #d1cdc6;
+  opacity: 1;
+}
+
+footer{
+  height: 600px;
+}
+
+.modal{
+  background-color: #fff;
+  z-index: 1;
+  background-position: fixed;
+ left: 0;
+ top: 0;
+ width: 100vw;
+ height: 100vh;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
