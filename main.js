@@ -18,7 +18,7 @@
 
 function createPokemon(abilities,name,attack,defense,hp){
 
-          floreon = {
+          flareon = {
           name: name,
           hp: hp,
           attack: attack,
@@ -26,8 +26,9 @@ function createPokemon(abilities,name,attack,defense,hp){
          abilities: abilities
       }
 
-        abilities.push(abilities);
-     console.log(floreon);
+
+     console.log(flareon);
+     pokemon.push(flareon)
 }
 createPokemon(abilities, name, attack, defense, hp);
  }
@@ -66,8 +67,9 @@ function createPokemon(abilities,name,attack,defense,hp){
          abilities: abilities
       }
 
-        abilities.push(abilities);
+
      console.log(vaporeon);
+     pokemon.push(vaporeon);
 }
 createPokemon(abilities, name, attack, defense, hp);
  }
@@ -107,8 +109,9 @@ function createPokemon(abilities,name,attack,defense,hp){
          abilities: abilities
       }
 
-        abilities.push(abilities);
+
      console.log(jolteon);
+     pokemon.push(jolteon);
 }
 createPokemon(abilities, name, attack, defense, hp);
  }
@@ -121,6 +124,29 @@ createPokemon(abilities, name, attack, defense, hp);
 
 
 
+  pokemon = [];
+
+
+class Trainer{
+  constructor(){
+
+    this.pokemon = pokemon;
+
+  }
+
+  all (){
+    return pokemon;
+
+  }
+
+   get(name){
+ for(var i = 0; i < pokemon.length; i++){
+   if(name == pokemon[i]){
+    return name;
+   }
+ }
+}
+}
 
 
 
@@ -132,19 +158,6 @@ createPokemon(abilities, name, attack, defense, hp);
 
 
 
-//       // for(var i = 0; i < x.abilities.length; i++){
-//     //   console.log(x);
-//       // }
-
-  // var xhr = new XMLHttpRequest();
-  // xhr.open("GET", "https://pokeapi.co/api/v2/ability/62/", true);
-  // xhr.send();
-
-
-    // var r = xhr.responseText;
-    // var h = JSON.parse(r);
-
-     // console.log(h.name);
 
 
 
@@ -154,16 +167,7 @@ createPokemon(abilities, name, attack, defense, hp);
 
 
 
-
-
-
-
-
-
-
-
-
-var images = ["deoxys.png","joltean.png","vaporeon.png"];
+var images = ["joltean.png","vaporeon.png"];
 
 function displayAvatar(){
 

@@ -88,12 +88,20 @@ z-index:2;
 }
 
 #data-stuff{
-  position:absolute;
-  z-index: 2;
-  right:50%;
-  bottom: 40%;
-  color:purple;
-  background-color: white;
+  position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 40%;
+    color: green;
+    font-family:'Roboto Mono', monospace;;
+    border: 1px solid white;
+    border-radius: 2%;
+    height: 91%;
+    width: 42%;
+    margin-right: -338px;
+    margin-bottom: -265px;
+    background-color: #1d1a1a;
+    opacity: .9;
 
 }
 
@@ -103,6 +111,27 @@ z-index:2;
 
 }
 
+#trainer-name{
+  text-align: center;
+  margin-right: 42px;
+}
 
+.poke-border{
+     border-radius: -16%;
+    border: 1px solid #bfb7b7;
+    padding-top: 84px;
+    margin-top: 228px;
+    background-color: black;
 
+}
+
+.pokemon-name{
+  margin-top: -83px;
+  text-align: center;
+}
+
+.pokemon-details{
+  text-align: justify;
+
+}
 
