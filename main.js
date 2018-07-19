@@ -16,6 +16,21 @@
      var defense = x.stats[3].base_stat;
      var hp = x.stats[5].base_stat;
 
+var i = 0;
+
+typeWriter();
+
+function typeWriter(){
+  if (i < name.length) {
+    document.getElementById("poke-name").innerHTML += name.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+
+}
+
+
+
 function createPokemon(abilities,name,attack,defense,hp){
 
           flareon = {
@@ -185,6 +200,19 @@ count +=1;
 })
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
