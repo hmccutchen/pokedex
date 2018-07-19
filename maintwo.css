@@ -1,64 +1,107 @@
 
 
-/*.squirtle img{
-width: 118%;
-
-}*/
-
-
-.banner{
-  height: 500px;
-}
-
-
-.bulba img{
-  margin-top: 28px;
-
-}
-
-.bulba img:hover{
-  background-color: #d1cdc6;
-  opacity: 1;
-}
-
-.squirtle img:hover{
-   background-color: #d1cdc6;
-  opacity: 1;
-}
-
-footer{
-  height: 600px;
-}
-
-.modal{
-  background-color: #fff;
-  z-index: 1;
-  background-position: fixed;
- left: 0;
- top: 0;
- width: 100vw;
- height: 100vh;
-
+html{
+background-color: black;
+background-size: cover;
 
 }
 
 
 
+.backdrop3 img{
+  margin: 0;
+  position: absolute;
+  width: 9%;
+  height: 16%;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-top: 20%;
+  background-color: aqua;
+opacity: 0.5;
+z-index:0;
+cursor: pointer;
+}
+
+.backdrop2 img{
+   margin: 0;
+  position: absolute;
+  width: 9%;
+  height: 16%;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-top: 10%;
+  background-color: #ede912;
+opacity: 0.5;
+z-index:0;
+cursor: pointer;
+}
 
 
 
+.backdrop img{
+  margin: 0;
+  position: absolute;
+  width: 9%;
+  height: 16%;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #c60909;
+  opacity: 0.5;
+  z-index:0;
+  cursor: pointer;
 
+}
 
+.backdrop img:hover{
 
+  height:16.2%;
+  width: 9.2%;
+}
 
+.backdrop2 img:hover{
+  height:16.2%;
+  width: 9.2%;
+}
+.backdrop3 img:hover{
+  height:16.2%;
+  width: 9.2%;
+}
 
+img:hover{
 
+  opacity:1;
 
+}
 
+.pokeball{
+  position: absolute;
+      width: 60%;
+      height:auto;
+    z-index: 1;
+    margin-left: 25%;
+}
 
+button{
+  position: absolute;
+right: 50%;
+z-index:2;
+}
 
+#data-stuff{
+  position:absolute;
+  z-index: 2;
+  right:50%;
+  bottom: 40%;
+  color:purple;
+  background-color: white;
 
+}
 
+.stats{
+  position: absolute;
+  color: white;
+
+}
 
 
 
