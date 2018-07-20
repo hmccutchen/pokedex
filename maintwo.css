@@ -1,35 +1,24 @@
+.flareon {
+  background-image: url("https://media.giphy.com/media/YZgPOMwUBQ7Sw/giphy.gif"); }
 
+.vaporeon {
+  background-image: url(https://i.gifer.com/C7iy.gif); }
 
-.flareon{
-   background-image: url("https://media.giphy.com/media/YZgPOMwUBQ7Sw/giphy.gif");
-}
+.jolteon {
+  background-image: url(https://em.wattpad.com/6351d25417a9aab2d68f35b52a94162b16d0192a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6e625a435f426c374261566b37413d3d2d3531313538363635302e313530333062383735363639373864343834313930333632393335342e676966); }
 
-.vaporeon{
-  background-image: url(https://i.gifer.com/C7iy.gif);
+html {
+  background-color: black;
+  background-size: cover;
+  font-family: nintendo; }
 
-}
+@font-face {
+  font-family: nintendo;
+  src: url(fonts/nineteen.otf); }
+body {
+  overflow-x: hidden; }
 
-.jolteon{
-  background-image: url(https://em.wattpad.com/6351d25417a9aab2d68f35b52a94162b16d0192a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6e625a435f426c374261566b37413d3d2d3531313538363635302e313530333062383735363639373864343834313930333632393335342e676966);
-}
-html{
-background-color: black;
-background-size: cover;
-font-family: nintendo;
-}
-
-@font-face{ font-family: nintendo;
-             src: url(fonts/nineteen.otf);
- }
-
-body{
-  overflow-x: hidden;
-
-
-}
-
-
-.backdrop3 img{
+.backdrop3 img {
   margin: 0;
   position: absolute;
   width: 9%;
@@ -38,16 +27,15 @@ body{
   border: 2px solid white;
   margin-top: 22%;
   background-color: aqua;
-opacity: 0.5;
-z-index:0;
-cursor: pointer;
-transition: opacity .7s;
- transition: height   .2s;
-  transition: width   .2s;
-}
+  opacity: 0.5;
+  z-index: 0;
+  cursor: pointer;
+  transition: opacity .7s;
+  transition: height   .2s;
+  transition: width   .2s; }
 
-.backdrop2 img{
-   margin: 0;
+.backdrop2 img {
+  margin: 0;
   position: absolute;
   width: 9%;
   height: 16%;
@@ -55,17 +43,14 @@ transition: opacity .7s;
   border: 2px solid white;
   margin-top: 11%;
   background-color: #ede912;
-opacity: 0.5;
-z-index:0;
-cursor: pointer;
-transition: opacity .7s;
- transition: height   .2s;
-  transition: width   .2s;
-}
+  opacity: 0.5;
+  z-index: 0;
+  cursor: pointer;
+  transition: opacity .7s;
+  transition: height   .2s;
+  transition: width   .2s; }
 
-
-
-.backdrop img{
+.backdrop img {
   margin: 0;
   position: absolute;
   width: 9%;
@@ -74,137 +59,104 @@ transition: opacity .7s;
   border: 2px solid white;
   background-color: #c60909;
   opacity: 0.5;
-  z-index:0;
+  z-index: 0;
   cursor: pointer;
-
   transition: opacity .7s;
   transition: height   .2s;
-  transition: width   .2s;
+  transition: width   .2s; }
 
-}
-
-.backdrop img:hover{
-
-  height:16.2%;
+.backdrop img:hover {
+  height: 16.2%;
   width: 9.2%;
-  opacity:1;
+  opacity: 1; }
 
-
-}
-
-.backdrop2 img:hover{
-  height:16.2%;
+.backdrop2 img:hover {
+  height: 16.2%;
   width: 9.2%;
-  opacity:1;
-}
-.backdrop3 img:hover{
-  height:16.2%;
+  opacity: 1; }
+
+.backdrop3 img:hover {
+  height: 16.2%;
   width: 9.2%;
-  opacity:1;
-}
+  opacity: 1; }
 
 /*img:hover{
 
   opacity:1;
 
 }*/
-
-.pokeball{
+.pokeball {
   position: absolute;
-      width: 60%;
-      height:auto;
-    z-index: 1;
-    margin-left: 25%;
-}
+  width: 60%;
+  height: auto;
+  z-index: 1;
+  margin-left: 25%; }
 
-button{
+button {
   position: absolute;
-right: 50%;
-z-index:2;
-}
+  right: 50%;
+  z-index: 2; }
 
-#data-stuff{
+#data-stuff {
   position: absolute;
-    z-index: 1;
-    right: 50%;
-    bottom: 40%;
-    color: green;
-    font-family:'Roboto Mono', monospace;;
-    border: 1px solid white;
-    border-radius: 2%;
-    height: 91%;
-    width: 42%;
-    margin-right: -338px;
-    margin-bottom: -265px;
-    background-color: #1d1a1a;
-    opacity: .9;
+  z-index: 1;
+  right: 50%;
+  bottom: 40%;
+  color: green;
+  font-family: 'Roboto Mono', monospace;
+  border: 1px solid white;
+  border-radius: 2%;
+  height: 91%;
+  width: 42%;
+  margin-right: -338px;
+  margin-bottom: -265px;
+  background-color: #1d1a1a;
+  opacity: .9; }
 
-}
-
-.stats{
+.stats {
   position: absolute;
-  color: white;
+  color: white; }
 
-}
-
-#trainer-name{
+#trainer-name {
   text-align: center;
-  margin-right: 42px;
-}
+  margin-right: 42px; }
 
-.poke-border{
-     border-radius: -16%;
-    border: 1px solid #bfb7b7;
-    padding-top: 84px;
-    margin-top: 228px;
-    background-color: black;
-transition: margin 3s;
-}
+.poke-border {
+  border-radius: -16%;
+  border: 1px solid #bfb7b7;
+  padding-top: 84px;
+  margin-top: 228px;
+  background-color: black;
+  transition: margin 3s; }
 
-#pokemon img{
-padding-right: 16px;
-    margin-left: 160px;
-    width: 234px;
-    z-index: 7;
-}
+#pokemon img {
+  padding-right: 16px;
+  margin-left: 160px;
+  width: 234px;
+  z-index: 7; }
 
-.pokemon-name{
+.pokemon-name {
   margin-top: -83px;
-  text-align: center;
-}
+  text-align: center; }
 
-.pokemon-details{
-  text-align: justify;
+.pokemon-details {
+  text-align: justify; }
 
-}
-
-.ghost{
+.ghost {
   /*opacity: 0.2;
 */
-margin-left: -4px;
-filter: blur(7px);
-}
-
-
+  margin-left: -4px;
+  filter: blur(7px); }
 
 @media screen and (max-width: 992px) {
+  #trainer-name {
+    color: red;
+    margin-right: 50%; }
 
-#trainer-name{
-color: red;
-  margin-right: 50%;
-}
+  .backdrop3 img {
+    margin-top: 27%; }
 
-.backdrop3 img{
-  margin-top: 27%;
-}
+  .backdrop2 img {
+    margin-top: 13%; } }
 
-.backdrop2 img{
-  margin-top: 13%;
-}
-
-.backdrop img{
-  margin-top: ;
-}
-
-}
-
+/*# sourceMappingURL=maintwo.css.map */
