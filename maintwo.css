@@ -1,11 +1,30 @@
 
 
+.flareon{
+   background-image: url("https://media.giphy.com/media/YZgPOMwUBQ7Sw/giphy.gif");
+}
+
+.vaporeon{
+  background-image: url(https://i.gifer.com/C7iy.gif);
+
+}
+
+.jolteon{
+  background-image: url(https://em.wattpad.com/6351d25417a9aab2d68f35b52a94162b16d0192a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6e625a435f426c374261566b37413d3d2d3531313538363635302e313530333062383735363639373864343834313930333632393335342e676966);
+}
 html{
 background-color: black;
 background-size: cover;
 
+
 }
 
+body{
+  overflow-x: hidden;
+
+
+
+}
 
 
 .backdrop3 img{
@@ -55,6 +74,7 @@ transition: opacity .7s;
   opacity: 0.5;
   z-index:0;
   cursor: pointer;
+
   transition: opacity .7s;
   transition: height   .2s;
   transition: width   .2s;
@@ -66,6 +86,8 @@ transition: opacity .7s;
   height:16.2%;
   width: 9.2%;
   opacity:1;
+
+
 }
 
 .backdrop2 img:hover{
@@ -155,7 +177,20 @@ padding-right: 16px;
 }
 
 .ghost{
-  opacity: 0.2;
-   margin-left: -4px;
+  /*opacity: 0.2;
+*/
+margin-left: -4px;
+filter: blur(7px);
 }
 }
+
+
+@media screen and (max-width: 900px) {
+
+#trainer-name{
+color: red;
+  margin-right: 50%;
+}
+
+}
+
