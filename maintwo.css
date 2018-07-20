@@ -1,0 +1,161 @@
+
+
+html{
+background-color: black;
+background-size: cover;
+
+}
+
+
+
+.backdrop3 img{
+  margin: 0;
+  position: absolute;
+  width: 9%;
+  height: 16%;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-top: 20%;
+  background-color: aqua;
+opacity: 0.5;
+z-index:0;
+cursor: pointer;
+transition: opacity .7s;
+ transition: height   .2s;
+  transition: width   .2s;
+}
+
+.backdrop2 img{
+   margin: 0;
+  position: absolute;
+  width: 9%;
+  height: 16%;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-top: 10%;
+  background-color: #ede912;
+opacity: 0.5;
+z-index:0;
+cursor: pointer;
+transition: opacity .7s;
+ transition: height   .2s;
+  transition: width   .2s;
+}
+
+
+
+.backdrop img{
+  margin: 0;
+  position: absolute;
+  width: 9%;
+  height: 16%;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #c60909;
+  opacity: 0.5;
+  z-index:0;
+  cursor: pointer;
+  transition: opacity .7s;
+  transition: height   .2s;
+  transition: width   .2s;
+
+}
+
+.backdrop img:hover{
+
+  height:16.2%;
+  width: 9.2%;
+  opacity:1;
+}
+
+.backdrop2 img:hover{
+  height:16.2%;
+  width: 9.2%;
+  opacity:1;
+}
+.backdrop3 img:hover{
+  height:16.2%;
+  width: 9.2%;
+  opacity:1;
+}
+
+/*img:hover{
+
+  opacity:1;
+
+}*/
+
+.pokeball{
+  position: absolute;
+      width: 60%;
+      height:auto;
+    z-index: 1;
+    margin-left: 25%;
+}
+
+button{
+  position: absolute;
+right: 50%;
+z-index:2;
+}
+
+#data-stuff{
+  position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 40%;
+    color: green;
+    font-family:'Roboto Mono', monospace;;
+    border: 1px solid white;
+    border-radius: 2%;
+    height: 91%;
+    width: 42%;
+    margin-right: -338px;
+    margin-bottom: -265px;
+    background-color: #1d1a1a;
+    opacity: .9;
+
+}
+
+.stats{
+  position: absolute;
+  color: white;
+
+}
+
+#trainer-name{
+  text-align: center;
+  margin-right: 42px;
+}
+
+.poke-border{
+     border-radius: -16%;
+    border: 1px solid #bfb7b7;
+    padding-top: 84px;
+    margin-top: 228px;
+    background-color: black;
+transition: margin 3s;
+}
+
+#pokemon img{
+padding-right: 16px;
+    margin-left: 160px;
+    width: 234px;
+    z-index: 7;
+}
+
+.pokemon-name{
+  margin-top: -83px;
+  text-align: center;
+}
+
+.pokemon-details{
+  text-align: justify;
+
+}
+
+.ghost{
+  opacity: 0.2;
+   margin-left: -4px;
+}
+}
