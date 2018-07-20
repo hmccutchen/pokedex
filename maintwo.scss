@@ -1,4 +1,6 @@
-
+$position: absolute;
+$height: 16.2%;
+$width: 9.2%;
 
 .flareon{
    background-image: url("https://media.giphy.com/media/YZgPOMwUBQ7Sw/giphy.gif");
@@ -15,7 +17,8 @@
 html{
 background-color: black;
 background-size: cover;
-font-family: nintendo;
+
+
 }
 
 @font-face{ font-family: nintendo;
@@ -26,12 +29,13 @@ body{
   overflow-x: hidden;
 
 
+
 }
 
 
 .backdrop3 img{
   margin: 0;
-  position: absolute;
+  position: $position;
   width: 9%;
   height: 16%;
   border-radius: 50%;
@@ -48,7 +52,7 @@ transition: opacity .7s;
 
 .backdrop2 img{
    margin: 0;
-  position: absolute;
+  position: $position;
   width: 9%;
   height: 16%;
   border-radius: 50%;
@@ -67,7 +71,7 @@ transition: opacity .7s;
 
 .backdrop img{
   margin: 0;
-  position: absolute;
+  position: $position;
   width: 9%;
   height: 16%;
   border-radius: 50%;
@@ -85,51 +89,45 @@ transition: opacity .7s;
 
 .backdrop img:hover{
 
-  height:16.2%;
-  width: 9.2%;
+  height: $height;
+  width: $width;
   opacity:1;
 
 
 }
 
 .backdrop2 img:hover{
-  height:16.2%;
-  width: 9.2%;
+  height:$height;
+  width: $width;
   opacity:1;
 }
 .backdrop3 img:hover{
-  height:16.2%;
-  width: 9.2%;
+  height:$height;
+  width: $width;
   opacity:1;
 }
 
-/*img:hover{
 
-  opacity:1;
-
-}*/
 
 .pokeball{
-  position: absolute;
+  position: $position;
       width: 60%;
       height:auto;
     z-index: 1;
     margin-left: 25%;
 }
 
-button{
-  position: absolute;
-right: 50%;
-z-index:2;
-}
+
 
 #data-stuff{
-  position: absolute;
+  position: $position;
     z-index: 1;
     right: 50%;
     bottom: 40%;
-    color: green;
-    font-family:'Roboto Mono', monospace;
+    color: #f2f3f4;
+    font-family: 'nintendo';
+    font-weight: normal;
+    letter-spacing: 3px;
     border: 1px solid white;
     border-radius: 2%;
     height: 91%;
@@ -141,8 +139,9 @@ z-index:2;
 
 }
 
+
 .stats{
-  position: absolute;
+  position: $position;
   color: white;
 
 }
@@ -155,10 +154,11 @@ z-index:2;
 .poke-border{
      border-radius: -16%;
     border: 1px solid #bfb7b7;
-    padding-top: 84px;
+    // padding-top: 84px;
     margin-top: 228px;
     background-color: black;
 transition: margin 3s;
+transition: padding-top 1s;
 }
 
 #pokemon img{
@@ -175,8 +175,21 @@ padding-right: 16px;
 
 .pokemon-details{
   text-align: justify;
-
+opacity: 0;
+transition: opacity 3s
 }
+
+.show-details{
+  opacity: 1;
+}
+
+.poke-open{
+padding-top: 84px;
+}
+
+
+
+
 
 .ghost{
   /*opacity: 0.2;

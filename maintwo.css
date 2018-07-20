@@ -9,8 +9,7 @@
 
 html {
   background-color: black;
-  background-size: cover;
-  font-family: nintendo; }
+  background-size: cover; }
 
 @font-face {
   font-family: nintendo;
@@ -80,11 +79,6 @@ body {
   width: 9.2%;
   opacity: 1; }
 
-/*img:hover{
-
-  opacity:1;
-
-}*/
 .pokeball {
   position: absolute;
   width: 60%;
@@ -92,18 +86,15 @@ body {
   z-index: 1;
   margin-left: 25%; }
 
-button {
-  position: absolute;
-  right: 50%;
-  z-index: 2; }
-
 #data-stuff {
   position: absolute;
   z-index: 1;
   right: 50%;
   bottom: 40%;
-  color: green;
-  font-family: 'Roboto Mono', monospace;
+  color: #f2f3f4;
+  font-family: 'nintendo';
+  font-weight: normal;
+  letter-spacing: 3px;
   border: 1px solid white;
   border-radius: 2%;
   height: 91%;
@@ -124,10 +115,10 @@ button {
 .poke-border {
   border-radius: -16%;
   border: 1px solid #bfb7b7;
-  padding-top: 84px;
   margin-top: 228px;
   background-color: black;
-  transition: margin 3s; }
+  transition: margin 3s;
+  transition: padding-top 1s; }
 
 #pokemon img {
   padding-right: 16px;
@@ -140,7 +131,15 @@ button {
   text-align: center; }
 
 .pokemon-details {
-  text-align: justify; }
+  text-align: justify;
+  opacity: 0;
+  transition: opacity 3s; }
+
+.show-details {
+  opacity: 1; }
+
+.poke-open {
+  padding-top: 84px; }
 
 .ghost {
   /*opacity: 0.2;

@@ -392,3 +392,63 @@ var f = document.getElementById("avatar1");
     ='<img src =\'https://www.freeiconspng.com/uploads/vaporeon-free-png-3.png\'> </img>';
 
   })
+
+
+avatar1.addEventListener("click", function(){
+
+var b = document.getElementById("poke");
+var c = document.querySelector(".pokemon-details");
+
+
+b.classList.add("poke-open");
+
+c.classList.add("show-details");
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//fancy typer writer effect for trainer name
+var app = document.getElementById('trainer-name');
+
+var typewriter = new Typewriter(app, {
+    loop: false
+});
+
+typewriter.typeString('Thomas Cruise').start();
+
+
+
+
+
+
