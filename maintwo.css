@@ -122,7 +122,14 @@ z-index:2;
     padding-top: 84px;
     margin-top: 228px;
     background-color: black;
+transition: margin 3s;
+}
 
+#pokemon img{
+padding-right: 16px;
+    margin-left: 160px;
+    width: 234px;
+    z-index: 7;
 }
 
 .pokemon-name{
@@ -132,6 +139,7 @@ z-index:2;
 
 .pokemon-details{
   text-align: justify;
+
 
 }
 

@@ -16,7 +16,7 @@
 
   <div class="flex">
 
-    <div id="avatar1" onclick="display();"class="backdrop animated ">
+    <div id="avatar1"  onclick="display();"class="backdrop animated ">
 
       <img src="http://i14.photobucket.com/albums/a350/Xous/FlareonXousFINAL.png" alt="">
     </div>
@@ -42,25 +42,28 @@
     <div class="row">
       <div class="col-md-6">
           <h1 id="trainer-name">Trainer Name</h1>
-
         </div>
+
       </div>
     </div>
+    <div id="pokemon"><img src="" alt=""></div>
     <div class="poke-border">
       <div>
             <h2 id="poke-name" class="pokemon-name"></h2>
           </div>
           <div class="pokemon-details">
-            <p id="hp">Details:</p>
-            <p id="attack">details:</p>
-            <p id="defense">Details:</p>
-            <p id="abilities">Details:</p>
+            hp: <span id="hp"></span><br>
+            attack: <span id="attack"></span><br>
+            defense: <span id="defense"></span><br>
+            abilities: <span id="abilities"></span>, <span id="abilities2"></span>
           </div>
     </div>
   </div>
   <div class="stats">
 
   </div>
+  </script>
+  <script src="index.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
