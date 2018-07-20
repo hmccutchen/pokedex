@@ -162,6 +162,8 @@ class Trainer{
 
 }
 
+var ThomasCruise = new Trainer;
+
 
 
 
@@ -183,7 +185,8 @@ button.innerHTML = flareon.name;
 
 d.innerHTML = flareon.abilities[0].ability.name;
 e.innerHTML = flareon.abilities[1].ability.name;
-
+   var g = document.getElementById("backgrounds");
+   g.classList.add("flareon");
   }
 
 
@@ -197,7 +200,9 @@ var c = document.getElementById("defense");
 var d = document.getElementById("abilities");
 var e = document.getElementById("abilities2");
 var button = document.getElementById("poke-name");
+var i = document.getElementById("backgrounds");
 
+i.classList.remove("flareon");
 
  a.innerHTML = "";
  b.innerHTML ="";
@@ -227,7 +232,8 @@ button.innerHTML = vaporeon.name;
 d.innerHTML = vaporeon.abilities[0].ability.name;
 e.innerHTML = vaporeon.abilities[1].ability.name;
 
-
+var h = document.getElementById("backgrounds");
+h.classList.add("vaporeon");
   }
 
 var v = document.getElementById("avatar3");
@@ -240,7 +246,9 @@ var c = document.getElementById("defense");
 var d = document.getElementById("abilities");
 var e = document.getElementById("abilities2");
 var button = document.getElementById("poke-name");
+var i = document.getElementById("backgrounds");
 
+i.classList.remove("vaporeon");
 
  a.innerHTML = "";
  b.innerHTML ="";
@@ -270,8 +278,12 @@ button.innerHTML = jolteon.name;
 d.innerHTML = jolteon.abilities[0].ability.name;
 e.innerHTML = jolteon.abilities[1].ability.name;
 
+var i = document.getElementById("backgrounds");
+i.classList.add("jolteon");
 
   }
+
+
 
 var j = document.getElementById("avatar2");
   j.addEventListener("mouseleave", function(){
@@ -283,7 +295,9 @@ var c = document.getElementById("defense");
 var d = document.getElementById("abilities");
 var e = document.getElementById("abilities2");
 var button = document.getElementById("poke-name");
+var i = document.getElementById("backgrounds");
 
+i.classList.remove("jolteon");
 
  a.innerHTML = "";
  b.innerHTML ="";
@@ -291,7 +305,10 @@ d.innerHTML = "";
 e.innerHTML = "";
 c.innerHTML = "";
 button.innerHTML = "";
+
 })
+
+
 
 
 
@@ -338,6 +355,7 @@ var f = document.getElementById("avatar1");
         b.removeChild(c);
       })
   })
+
 
 
 
