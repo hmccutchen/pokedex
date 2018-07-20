@@ -167,7 +167,7 @@ class Trainer{
 
 
 //displays pokemon stats to the DOM
-
+//right below display the mouse leave actually removes all pokemon info
   function display(){
 var button = document.getElementById("poke-name");
 var a = document.getElementById("hp");
@@ -185,6 +185,28 @@ d.innerHTML = flareon.abilities[0].ability.name;
 e.innerHTML = flareon.abilities[1].ability.name;
 
   }
+
+
+var f = document.getElementById("avatar1");
+  f.addEventListener("mouseleave", function(){
+  var l = document.getElementById("pokemon").innerHTML = "";
+
+var a = document.getElementById("hp");
+var b = document.getElementById("attack");
+var c = document.getElementById("defense");
+var d = document.getElementById("abilities");
+var e = document.getElementById("abilities2");
+var button = document.getElementById("poke-name");
+
+
+ a.innerHTML = "";
+ b.innerHTML ="";
+d.innerHTML = "";
+e.innerHTML = "";
+c.innerHTML = "";
+button.innerHTML = "";
+})
+
 
 
   function display2(){
@@ -208,6 +230,27 @@ e.innerHTML = vaporeon.abilities[1].ability.name;
 
   }
 
+var v = document.getElementById("avatar3");
+  v.addEventListener("mouseleave", function(){
+  var l = document.getElementById("pokemon").innerHTML = "";
+
+var a = document.getElementById("hp");
+var b = document.getElementById("attack");
+var c = document.getElementById("defense");
+var d = document.getElementById("abilities");
+var e = document.getElementById("abilities2");
+var button = document.getElementById("poke-name");
+
+
+ a.innerHTML = "";
+ b.innerHTML ="";
+d.innerHTML = "";
+e.innerHTML = "";
+c.innerHTML = "";
+button.innerHTML = "";
+})
+
+
 
   function display3(){
 var button = document.getElementById("poke-name");
@@ -229,6 +272,28 @@ e.innerHTML = jolteon.abilities[1].ability.name;
 
 
   }
+
+var j = document.getElementById("avatar2");
+  j.addEventListener("mouseleave", function(){
+  var l = document.getElementById("pokemon").innerHTML = "";
+
+var a = document.getElementById("hp");
+var b = document.getElementById("attack");
+var c = document.getElementById("defense");
+var d = document.getElementById("abilities");
+var e = document.getElementById("abilities2");
+var button = document.getElementById("poke-name");
+
+
+ a.innerHTML = "";
+ b.innerHTML ="";
+d.innerHTML = "";
+e.innerHTML = "";
+c.innerHTML = "";
+button.innerHTML = "";
+})
+
+
 
 
 
@@ -286,11 +351,6 @@ var f = document.getElementById("avatar1");
    var b = document.getElementById("pokemon").innerHTML
      = '<img src =\'https://www.freeiconspng.com/uploads/flareon-pokemon-png-1.png\'> </img>';
 
-b.addEventListener("mouseleave", function(){
-
-  b.innerHTML = "";
-
-})
   })
 
 
