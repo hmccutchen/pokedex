@@ -227,6 +227,7 @@ button.innerHTML = jolteon.name;
 d.innerHTML = jolteon.abilities[0].ability.name;
 e.innerHTML = jolteon.abilities[1].ability.name;
 
+
   }
 
 
@@ -285,7 +286,11 @@ var f = document.getElementById("avatar1");
    var b = document.getElementById("pokemon").innerHTML
      = '<img src =\'https://www.freeiconspng.com/uploads/flareon-pokemon-png-1.png\'> </img>';
 
+b.addEventListener("mouseleave", function(){
 
+  b.innerHTML = "";
+
+})
   })
 
 
