@@ -139,7 +139,7 @@ createPokemon(abilities, name, attack, defense, hp);
 
   pokemon = [];
 
-
+// creates a trainer object to store all pokemon and get pokemon
 class Trainer{
   constructor(){
 
@@ -166,7 +166,7 @@ class Trainer{
 
 
 
-
+//displays pokemon stats to the DOM
 
   function display(){
 var button = document.getElementById("poke-name");
@@ -183,8 +183,6 @@ button.innerHTML = flareon.name;
 
 d.innerHTML = flareon.abilities[0].ability.name;
 e.innerHTML = flareon.abilities[1].ability.name;
-
-
 
   }
 
@@ -234,47 +232,53 @@ e.innerHTML = jolteon.abilities[1].ability.name;
 
 
 
+//adds ghost image on hover
+
+var f = document.getElementById("avatar1");
+   f.addEventListener("mouseover", function(){
+  var b = document.getElementById("pokemon");
+      var c = document.createElement("img");
+      c.src = "https://www.freeiconspng.com/uploads/flareon-pokemon-png-1.png";
+           c.classList.add("ghost");
+      b.appendChild(c);
+      f.addEventListener("mouseleave", function(){
+        b.removeChild(c);
+      })
+  })
+
+
+   var j = document.getElementById("avatar2");
+   j.addEventListener("mouseover", function(){
+  var b = document.getElementById("pokemon");
+      var c = document.createElement("img");
+      c.src = "https://vignette.wikia.nocookie.net/wingsoffire/images/1/1e/Jolteon.png/revision/latest?cb=20160624090722ng-1.png";
+           c.classList.add("ghost");
+      b.appendChild(c);
+      j.addEventListener("mouseleave", function(){
+        b.removeChild(c);
+      })
+  })
+
+
+
+   var v = document.getElementById("avatar3")
+   v.addEventListener("mouseover", function(){
+   var b = document.getElementById("pokemon");
+    var c = document.createElement("img");
+    c.src = "https://www.freeiconspng.com/uploads/vaporeon-free-png-3.png";
+      c.classList.add("ghost");
+      b.appendChild(c);
+      v.addEventListener("mouseleave", function(){
+        b.removeChild(c);
+      })
+  })
 
 
 
 
 
-var images = ["joltean.png","vaporeon.png"];
 
-function displayAvatar(){
-
-addEventListener("click", function(){
-  count = 0;
-var a = document.getElementById("data-stuff");
-var b = document.createElement("img");
-
-b.src = "images/"+ images[count];
-b.width = "300"
-a.appendChild(b);
-
-count +=1;
-
-})
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//animations
+//animations and avatar images
   var avatar = document.getElementById("avatar1");
     avatar1.addEventListener("click", function(){
    avatar1.classList.toggle("flash");
@@ -283,6 +287,7 @@ count +=1;
 
 
   })
+
 
 
   var avatar2 = document.getElementById("avatar2");
