@@ -40,7 +40,7 @@ body{
 
 .backdrop3 img{
   margin: 0;
-  position: $position
+  position: $position;
   width: 9%;
   height: 16%;
   border-radius: 50%;
@@ -138,7 +138,7 @@ z-index:2;
     right: 50%;
     bottom: 40%;
     color: green;
-    font-family:'Roboto Mono', monospace;;
+    font-family:'Roboto Mono', monospace;
     border: 1px solid white;
     border-radius: 2%;
     height: 91%;
@@ -211,9 +211,7 @@ color: red;
   margin-top: 13%;
 }
 
-.backdrop img{
-  margin-top: ;
-}
+
 
 }
 
