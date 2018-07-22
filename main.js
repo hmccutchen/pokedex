@@ -171,6 +171,12 @@ var ThomasCruise = new Trainer;
 //displays pokemon stats to the DOM
 //right below display the mouse leave actually removes all pokemon info
   function display(){
+var open = document.getElementById("poke");
+var open2 = document.querySelector(".pokemon-details");
+
+open.classList.add("poke-open");
+open2.classList.add("show-details");
+
 var button = document.getElementById("poke-name");
 var a = document.getElementById("hp");
 var b = document.getElementById("attack");
@@ -187,6 +193,8 @@ d.innerHTML = flareon.abilities[0].ability.name;
 e.innerHTML = flareon.abilities[1].ability.name;
    var g = document.getElementById("backgrounds");
    g.classList.add("flareon");
+   var x = document.getElementById("flareon-cry");
+x.play();
   }
 
 
@@ -201,6 +209,9 @@ var d = document.getElementById("abilities");
 var e = document.getElementById("abilities2");
 var button = document.getElementById("poke-name");
 var i = document.getElementById("backgrounds");
+//opens detail screen
+var open = document.getElementById("poke");
+var open2 = document.querySelector(".pokemon-details");
 
 i.classList.remove("flareon");
 
@@ -210,11 +221,20 @@ d.innerHTML = "";
 e.innerHTML = "";
 c.innerHTML = "";
 button.innerHTML = "";
+
+open.classList.remove("poke-open");
+open2.classList.remove("show-details");
+
 })
 
 
 
   function display2(){
+  var open = document.getElementById("poke");
+ var open2 = document.querySelector(".pokemon-details");
+
+open.classList.add("poke-open");
+open2.classList.add("show-details");
 var button = document.getElementById("poke-name");
 
 button.innerHTML = vaporeon.name;
@@ -234,6 +254,8 @@ e.innerHTML = vaporeon.abilities[1].ability.name;
 
 var h = document.getElementById("backgrounds");
 h.classList.add("vaporeon");
+var x = document.getElementById("vaporeon-cry");
+x.play();
   }
 
 var v = document.getElementById("avatar3");
@@ -248,6 +270,10 @@ var e = document.getElementById("abilities2");
 var button = document.getElementById("poke-name");
 var i = document.getElementById("backgrounds");
 
+var open = document.getElementById("poke");
+var open2 = document.querySelector(".pokemon-details");
+
+
 i.classList.remove("vaporeon");
 
  a.innerHTML = "";
@@ -256,11 +282,21 @@ d.innerHTML = "";
 e.innerHTML = "";
 c.innerHTML = "";
 button.innerHTML = "";
+open.classList.remove("poke-open");
+open2.classList.remove("show-details");
+
 })
 
 
 
   function display3(){
+
+  var open = document.getElementById("poke");
+  var open2 = document.querySelector(".pokemon-details");
+
+ open.classList.add("poke-open");
+ open2.classList.add("show-details");
+
 var button = document.getElementById("poke-name");
 
 button.innerHTML = jolteon.name;
@@ -280,7 +316,8 @@ e.innerHTML = jolteon.abilities[1].ability.name;
 
 var i = document.getElementById("backgrounds");
 i.classList.add("jolteon");
-
+var x = document.getElementById("jolteon-cry");
+x.play();
   }
 
 
@@ -297,6 +334,9 @@ var e = document.getElementById("abilities2");
 var button = document.getElementById("poke-name");
 var i = document.getElementById("backgrounds");
 
+var open = document.getElementById("poke");
+var open2 = document.querySelector(".pokemon-details");
+
 i.classList.remove("jolteon");
 
  a.innerHTML = "";
@@ -305,6 +345,10 @@ d.innerHTML = "";
 e.innerHTML = "";
 c.innerHTML = "";
 button.innerHTML = "";
+
+open.classList.remove("poke-open");
+ open2.classList.remove("show-details");
+
 
 })
 
@@ -321,7 +365,7 @@ var f = document.getElementById("avatar1");
    f.addEventListener("mouseover", function(){
   var b = document.getElementById("pokemon");
       var c = document.createElement("img");
-      c.src = "https://www.freeiconspng.com/uploads/flareon-pokemon-png-1.png";
+      c.src = "http://rs425.pbsrc.com/albums/pp335/Grasaldrea/ShinyFlareonanimated.gif~c200";
            c.classList.add("ghost");
       b.appendChild(c);
       f.addEventListener("mouseleave", function(){
@@ -334,7 +378,7 @@ var f = document.getElementById("avatar1");
    j.addEventListener("mouseover", function(){
   var b = document.getElementById("pokemon");
       var c = document.createElement("img");
-      c.src = "https://vignette.wikia.nocookie.net/wingsoffire/images/1/1e/Jolteon.png/revision/latest?cb=20160624090722ng-1.png";
+      c.src = "http://rs425.pbsrc.com/albums/pp335/Grasaldrea/ShinyJolteonanimated.gif~c200";
            c.classList.add("ghost");
       b.appendChild(c);
       j.addEventListener("mouseleave", function(){
@@ -348,7 +392,7 @@ var f = document.getElementById("avatar1");
    v.addEventListener("mouseover", function(){
    var b = document.getElementById("pokemon");
     var c = document.createElement("img");
-    c.src = "https://www.freeiconspng.com/uploads/vaporeon-free-png-3.png";
+    c.src = "http://rs425.pbsrc.com/albums/pp335/Grasaldrea/ShinyVaporeonanimated.gif~c200";
       c.classList.add("ghost");
       b.appendChild(c);
       v.addEventListener("mouseleave", function(){
@@ -392,38 +436,6 @@ var f = document.getElementById("avatar1");
     ='<img src =\'https://www.freeiconspng.com/uploads/vaporeon-free-png-3.png\'> </img>';
 
   })
-
-
-avatar1.addEventListener("click", function(){
-
-var b = document.getElementById("poke");
-var c = document.querySelector(".pokemon-details");
-
-
-b.classList.add("poke-open");
-
-c.classList.add("show-details");
-
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

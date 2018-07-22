@@ -7,6 +7,9 @@
 .jolteon {
   background-image: url(https://em.wattpad.com/6351d25417a9aab2d68f35b52a94162b16d0192a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6e625a435f426c374261566b37413d3d2d3531313538363635302e313530333062383735363639373864343834313930333632393335342e676966); }
 
+.static-screen {
+  background-image: url(https://78.media.tumblr.com/d4c9f98836a5010af6de41e5e42a0a80/tumblr_orqp0yqPg61w4t58uo1_500.gif); }
+
 html {
   background-color: black;
   background-size: cover; }
@@ -29,6 +32,7 @@ body {
   opacity: 0.5;
   z-index: 0;
   cursor: pointer;
+  background: -webkit-radial-gradient(25px 25px, circle, aqua, #000);
   transition: opacity .7s;
   transition: height   .2s;
   transition: width   .2s; }
@@ -45,6 +49,7 @@ body {
   opacity: 0.5;
   z-index: 0;
   cursor: pointer;
+  background: -webkit-radial-gradient(25px 25px, circle, #ede912, #000);
   transition: opacity .7s;
   transition: height   .2s;
   transition: width   .2s; }
@@ -60,6 +65,7 @@ body {
   opacity: 0.5;
   z-index: 0;
   cursor: pointer;
+  background: -webkit-radial-gradient(25px 25px, circle, #c60909, #000);
   transition: opacity .7s;
   transition: height   .2s;
   transition: width   .2s; }
@@ -91,18 +97,20 @@ body {
   z-index: 1;
   right: 50%;
   bottom: 40%;
-  color: #f2f3f4;
+  color: white;
   font-family: 'nintendo';
   font-weight: normal;
   letter-spacing: 3px;
-  border: 1px solid white;
-  border-radius: 2%;
+  border-radius: 1%;
   height: 91%;
   width: 42%;
   margin-right: -338px;
   margin-bottom: -265px;
-  background-color: #1d1a1a;
-  opacity: .9; }
+  background-color: #052b04;
+  opacity: .8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .stats {
   position: absolute;
@@ -114,11 +122,12 @@ body {
 
 .poke-border {
   border-radius: -16%;
-  border: 1px solid #bfb7b7;
+  border-top: 2px solid #bfb7b7;
+  border-bottom: 2px solid #bfb7b7;
   margin-top: 228px;
   background-color: black;
   transition: margin 3s;
-  transition: padding-top 1s; }
+  transition: padding-top .4s; }
 
 #pokemon img {
   padding-right: 16px;
@@ -133,7 +142,7 @@ body {
 .pokemon-details {
   text-align: justify;
   opacity: 0;
-  transition: opacity 3s; }
+  transition: opacity 0.8s; }
 
 .show-details {
   opacity: 1; }
