@@ -2,10 +2,10 @@
   background-image: url("https://media.giphy.com/media/YZgPOMwUBQ7Sw/giphy.gif"); }
 
 .vaporeon {
-  background-image: url(https://i.gifer.com/C7iy.gif); }
+  background-image: url("https://i.gifer.com/C7iy.gif"); }
 
 .jolteon {
-  background-image: url(https://em.wattpad.com/6351d25417a9aab2d68f35b52a94162b16d0192a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6e625a435f426c374261566b37413d3d2d3531313538363635302e313530333062383735363639373864343834313930333632393335342e676966); }
+  background-image: url("https://em.wattpad.com/6351d25417a9aab2d68f35b52a94162b16d0192a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6e625a435f426c374261566b37413d3d2d3531313538363635302e313530333062383735363639373864343834313930333632393335342e676966"); }
 
 html {
   background-color: black;
@@ -13,7 +13,7 @@ html {
 
 @font-face {
   font-family: nintendo;
-  src: url(fonts/nineteen.otf); }
+  src: url("fonts/nineteen.otf"); }
 body {
   overflow-x: hidden; }
 
@@ -31,9 +31,9 @@ body {
   cursor: pointer;
   padding: 8px;
   background: -webkit-radial-gradient(25px 25px, circle, aqua, #000);
-  transition: opacity .7s;
-  transition: height   .2s;
-  transition: width   .2s; }
+  transition: opacity 0.7s;
+  transition: height 0.2s;
+  transition: width 0.2s; }
 
 .backdrop2 img {
   margin: 0;
@@ -49,9 +49,9 @@ body {
   cursor: pointer;
   padding: 8px;
   background: -webkit-radial-gradient(25px 25px, circle, #ede912, #000);
-  transition: opacity .7s;
-  transition: height   .2s;
-  transition: width   .2s; }
+  transition: opacity 0.7s;
+  transition: height 0.2s;
+  transition: width 0.2s; }
 
 .backdrop img {
   margin: 0;
@@ -66,9 +66,9 @@ body {
   cursor: pointer;
   background: -webkit-radial-gradient(25px 25px, circle, #c60909, #000);
   padding: 8px;
-  transition: opacity .7s;
-  transition: height   .2s;
-  transition: width   .2s; }
+  transition: opacity 0.7s;
+  transition: height 0.2s;
+  transition: width 0.2s; }
 
 .backdrop img:hover {
   height: 16.2%;
@@ -107,7 +107,7 @@ body {
   margin-right: -338px;
   margin-bottom: -265px;
   background-color: #052b04;
-  opacity: .8;
+  opacity: 0.8;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -127,7 +127,7 @@ body {
   margin-top: 228px;
   background-color: black;
   transition: margin 3s;
-  transition: padding-top .4s; }
+  transition: padding-top 0.4s; }
 
 #pokemon img {
   padding-right: 16px;
@@ -156,15 +156,22 @@ body {
   margin-left: -4px;
   filter: blur(7px); }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 376px) {
+  #data-stuff {
+    right: 40%;
+    width: 100%;
+    margin-right: -90%;
+    margin-bottom: -90%; }
+
+  .pokeball {
+    margin-left: 0; } }
+@media screen and (min-width: 377px) and (max-width: 769px) {
+  #data-stuff {
+    bottom: 23%;
+    width: 67%; }
+
   #trainer-name {
-    color: red;
-    margin-right: 50%; }
-
-  .backdrop3 img {
-    margin-top: 27%; }
-
-  .backdrop2 img {
-    margin-top: 13%; } }
+    margin-right: 22%;
+    margin-bottom: 5%; } }
 
 /*# sourceMappingURL=maintwo.css.map */

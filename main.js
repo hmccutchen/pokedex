@@ -458,9 +458,3 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter.typeString('Thomas Cruise').start();
-
-
-
-
-
-
